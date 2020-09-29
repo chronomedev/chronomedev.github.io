@@ -8,7 +8,7 @@ function servicesTest(){
     document.getElementById("status_proses").innerHTML = "Starting Chronome Portfolio container...";
     $.ajax({  
         type: 'POST',  
-        url: 'https://chronomedev.herokuapp.com/',
+        url: 'https://chronomedev.herokuapp.com/on',
         crossDomain: true,
         headers: {
             'Content-Type' : 'application/json'
