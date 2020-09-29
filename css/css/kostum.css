@@ -1,0 +1,134 @@
+/* css custom 
+ChronomeDev 2020 */
+
+#github:hover{
+    cursor: pointer;
+}
+
+.loader_screen{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+/* // untuk icon game */
+
+.hint_game{
+    padding: 15px;
+    position:fixed;
+	width:350px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: royalblue;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+    z-index: 100;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: lightseagreen;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+    z-index: 100;
+}
+
+.float:hover{
+    background-color: rgb(44, 76, 172);
+    cursor: pointer;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+/* //////id persection//////////// */
+#loading_screen{
+    opacity: 0;
+}
+
+#home-section{
+    background-image: url('../../images/2bcodeblur.jpg');
+}
+
+#chronome{
+    background-image: url('../../images/chr_back.jpg');
+}
+
+#technology{
+    background-color:darkslategray;
+}
+
+#projek{
+    background-color:brown;
+}
+#contact{
+    background-image: url('../../images/2breflect.png');
+}
+
+#error{
+    background-image: url('../..//images/74c.gif');
+}
+
+#iconGame{
+    padding: 10px;
+}
+
+.unslate_co--section.aksen_warna{
+    background-color: #1d1d1d;
+    /* #2d6180 */
+}
+
+.reveal-wrap.coklat{
+    background-color: #775f30;
+}
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+.caption_slide{
+    color:green;
+}
+
+.d-block.w-100:hover{
+    cursor: pointer;
+}
+
+.game_services_loading{
+    padding: 100px;
+    z-index: 7700;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#process_state{
+    margin: 25px;
+    width:120px;
+}
+
+#home-game{
+    background-image: url('../../images/idflag.jpg');
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: yellow;
+            opacity: 1; /* Firefox */
+}
+
+/* #leaderboard{
+    background-color: wh; */
+}
