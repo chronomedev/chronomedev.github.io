@@ -14,7 +14,7 @@ function servicesTest(){
             'Content-Type' : 'application/json'
         },
         dataType: "json",
-        data: "",
+        data: JSON.stringify({"send : 1"}),
         success: (data_respon)=> {
             if(data_respon["status"] == 1){
                 document.getElementById("status_proses").innerHTML = "Success!";
