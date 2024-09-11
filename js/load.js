@@ -8,7 +8,7 @@ function servicesTest(){
     document.getElementById("status_proses").innerHTML = "Starting Chronome Portfolio container...";
     $.ajax({  
         type: 'POST',  
-        url: 'https://chronomedevwebservice-bv0x2dxs.b4a.run/',
+        url: 'https://chronomedevwebservice-bv0x2dxs.b4a.run/on',
         crossDomain: true,
         headers: {
             'Content-Type' : 'application/json'
