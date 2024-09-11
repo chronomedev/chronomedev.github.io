@@ -8,7 +8,7 @@ function servicesTest(){
     document.getElementById("status_proses").innerHTML = "Starting Chronome Portfolio container...";
     $.ajax({  
         type: 'POST',  
-        url: 'https://chronomedev.herokuapp.com/on',
+        url: 'https://chronomedevwebservice-bv0x2dxs.b4a.run/',
         crossDomain: true,
         headers: {
             'Content-Type' : 'application/json'
@@ -18,7 +18,7 @@ function servicesTest(){
         success: (data_respon)=> {
             if(data_respon["status"] == 1){
                 document.getElementById("status_proses").innerHTML = "Success!";
-                window.location.assign("https://chronomedev.herokuapp.com/");
+                window.location.assign("https://chronomedevwebservice-bv0x2dxs.b4a.run/");
             } else {
                 $("#game_service_loader").hide();
                 document.getElementById("status_proses").innerHTML = "Failed!";
