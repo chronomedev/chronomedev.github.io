@@ -1,9 +1,9 @@
 // load script to portfolio container
 
 window.onload = ()=>{
-    servicesTest();
+    servicesTest(1);
 }
-function servicesTest(){
+function servicesTest(tryConnect){
 
     document.getElementById("status_proses").innerHTML = "Starting Chronome Portfolio container...";
     $.ajax({  
@@ -20,11 +20,15 @@ function servicesTest(){
                 document.getElementById("status_proses").innerHTML = "Success!";
                 window.location.assign("https://chronomedevwebservice-bv0x2dxs.b4a.run/");
             } else {
-                $("#game_service_loader").hide();
-                document.getElementById("status_proses").innerHTML = "Failed!";
-                $(".unslate_co--overlayer").hide();
-                document.getElementById("img_loading").src = "images/chibi_angry_by_sakuretta94.png";
-                window.alert("Servis sedang tidak merespon harap coba kembali nanti");
+                if (tryConnect === 1) {
+                    servicesTest(2); // 2nd iteration
+                } else if (tryConnect === 2) {
+                    $("#game_service_loader").hide();
+                    document.getElementById("status_proses").innerHTML = "Failed!";
+                    $(".unslate_co--overlayer").hide();
+                    document.getElementById("img_loading").src = "images/chibi_angry_by_sakuretta94.png";
+                    window.alert("Servis sedang tidak merespon harap coba kembali nanti");
+                }
             }
         },
         error : (error)=>{
