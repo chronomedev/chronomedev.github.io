@@ -37,6 +37,7 @@ function servicesTest(tryConnect){
             $("#game_service_loader").hide();
             document.getElementById("img_loading").src = "images/chibi_angry_by_sakuretta94_d7kj0os-fullview.png"
             document.getElementById("status_proses").innerHTML = "Failed!";
-        }
+        },
+        timeout : 50000
     });
 }
