@@ -8,7 +8,7 @@ function servicesTest(tryConnect){
     document.getElementById("status_proses").innerHTML = "Starting Chronome Portfolio container...";
     $.ajax({  
         type: 'POST',  
-        url: 'https://chronomedevwebservice-bv0x2dxs.b4a.run/on',
+        url: 'https://chronomedev.diode.link/on',
         crossDomain: true,
         headers: {
             'Content-Type' : 'application/json'
@@ -18,7 +18,7 @@ function servicesTest(tryConnect){
         success: (data_respon)=> {
             if(data_respon["status"] == 1){
                 document.getElementById("status_proses").innerHTML = "Success!";
-                window.location.assign("https://chronomedevwebservice-bv0x2dxs.b4a.run/");
+                window.location.assign("https://chronomedev.diode.link/");
             } else {
                 if (tryConnect === 1) {
                     servicesTest(2); // 2nd iteration
